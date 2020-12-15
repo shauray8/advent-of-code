@@ -1,2 +1,2 @@
-# advent-of-code
-Advent of Code 2020
+# advent of code
+Solutions For Advent of Code 2020
