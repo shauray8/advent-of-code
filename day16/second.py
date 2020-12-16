@@ -44,19 +44,30 @@ for i in range(len(ticket)):
         break
     
 
-print(len(finalticket))
-#print(finalrange)
-e = []
+# print(len(finalticket))
 
-for j in range(len(finalticket[0])):
-    a = 0
-    for i in finalticket:
-        #for j in range(len(i)):
-        #print(i[0])
-        if (int(i[j]) in range(int(finalrange[0][0]),int(finalrange[0][1])+1)) or (int(i[j]) in range(int(finalrange[1][0]),int(finalrange[1][1])+1)):
-            a+=1
-    e.append(a)
-print(e)
+print(len(ticket))
+
+def calc(ll):
+    e = []
+    for j in range(len(finalticket[0])):
+        a = 0
+
+        for i in finalticket:
+            #for j in range(len(i)):
+            #print(i[0])
+            if (int(i[j]) in range(int(finalrange[ll][0]),int(finalrange[ll][1])+1)) or (int(i[j]) in range(int(finalrange[ll+1][0]),int(finalrange[ll+1][1])+1)):
+                a+=1
+
+        e.append(a)
+    print(e)
+    # for i in range(len(e)):
+    #     if int(e[i]) == len(finalticket):
+    #         print(i)
 
 
-#print("error: ",aa-error)
+for i in range(0,len(finalrange),2):
+    calc(i)
+    print("   ")
+
+    
