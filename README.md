@@ -3,3 +3,6 @@
 all the questions live at https://adventofcode.com/
 
 Advent of code is so FUCKIN' EASY listning Taylor Swift's new album(EVERMORE) while solving !!
+---
+
+more commpetative programming stuff here !!
