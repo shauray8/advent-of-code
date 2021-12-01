@@ -1,9 +1,6 @@
 import os
-lis = []
-w = open('day1_data.txt','r')
-lis.append(w.read())
-lis = lis[0].split("\n")
-lis = lis[:-1]
+fn =  "data.txt"
+lis = open(fn).read().strip().split("\n")
 
 inc = 0
 dec = 0
