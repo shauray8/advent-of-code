@@ -3,5 +3,18 @@ fn =  "data.in"
 tfn = "try.in"
 lis = open(fn).read().strip().split("\n")
 
+forward, depth = 0,0
 
-print(lis)
+for i in lis:
+    op, nu = i.split(" ")
+    print(op, nu)
+    if op == "forward":
+        forward += int(nu)
+    elif op == "down":
+        depth += int(nu)
+    else: 
+        depth -= int(nu)
+
+
+print(forward*depth)
+
