@@ -7,7 +7,6 @@ forward, depth, aim = 0,0,0
 
 for i in lis:
     op, nu = i.split(" ")
-    print(op, nu)
     if op == "forward":
         forward += int(nu)
         depth += aim*int(nu)
