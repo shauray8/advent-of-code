@@ -3,17 +3,28 @@ fn =  "data.in"
 tfn = "try.in"
 lis = open(fn).read().strip().split("\n")
 
-forward, depth = 0,0
+epsilon = ""
+gamma = ""
+for j in range(len(lis[0])):
+    ones, zeros = [], []
+    for i in range(len(lis)):
+        if int(lis[i][j]) == 1:
+            ones.append(1)
+        else:
+            zeros.append(0)
+    print(len(ones))
+    print(len(zeros))
 
-for i in lis:
-    op, nu = i.split(" ")
-    if op == "forward":
-        forward += int(nu)
-    elif op == "down":
-        depth += int(nu)
-    else: 
-        depth -= int(nu)
+    if len(ones) > len(zeros):
+        gamma += str(1)
+    else:
+        gamma += str(0)
+
+    if len(ones) < len(zeros):
+        epsilon += str(1)
+    else:
+        epsilon += str(0)
 
 
-print(forward*depth)
 
+print(epsilon, gamma)
