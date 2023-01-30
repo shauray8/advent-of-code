@@ -1,11 +1,9 @@
-#pragma GCC optimize ("02")
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int main(){
-
-	string a;
-	cin << a;
-
+  int n;
+  scanf("%d",n);
+  long long pi = 
 }
