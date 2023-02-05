@@ -7,7 +7,9 @@ if sys.argv[1] == "py":
         filename = f"{sys.argv[3]}/{alpha[i]}.{sys.argv[1]}"
         with open(filename,'w') as fp:
             fp.write(
-"""import sys
+"""# Author: Shauray
+
+import sys
 input = sys.stdin.readline
 
 def take_int():
@@ -26,6 +28,7 @@ def solve():
 if __name__ == "__main__":
     n = take_int()
     while(n):
+        solve()
         n-=1
 """)
             pass
@@ -47,7 +50,7 @@ void solve(){
 
 int main(){
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
+  //cin.tie(0);
 
   int n;
   scanf("%d",n);
