@@ -53,7 +53,7 @@ int main(){
   //cin.tie(0);
 
   int n;
-  scanf("%d",n);
+  scanf("%d",&n);
   while(n--){
     solve();
   }
